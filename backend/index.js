@@ -17,7 +17,7 @@ app.get("/",(req,res)=>{
     res.status(200).json({msg:"this is home route"});
 })
 
-app.listen(8080,()=>{
+app.listen(process.env.port,()=>{
     database.connect((err)=>{
         if(err){
             console.log("we got error while connectioin with databse",err);
@@ -25,6 +25,8 @@ app.listen(8080,()=>{
         }
         else{
             console.log("connected to database");
+        
         }
+        console.log("app is running");
     })
 })
