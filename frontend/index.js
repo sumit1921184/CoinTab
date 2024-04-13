@@ -82,7 +82,7 @@ function displayUser(data) {
 
 async function databaseFetch(id) {
     try{
-        let res = await fetch(`http://localhost:8080/user/${id}`);
+        let res = await fetch(`https://cointab-yqqo.onrender.com/user/${id}`);
         let data = await res.json();
         console.log(data);
         if(data.error){
@@ -107,7 +107,7 @@ async function databaseFetch(id) {
 
 async function addBtnFunction(obj,addBtnn,openBtn) {
     try{
-        let res = await fetch("http://localhost:8080/user/",{
+        let res = await fetch("https://cointab-yqqo.onrender.com/user/",{
             method:"POST",
             headers:{
                 "content-type":"application/json"

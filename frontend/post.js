@@ -163,7 +163,7 @@ async function addPostToDatabase(userId, id, title, body, userName, company) {
     const data = {userId, id, title, body, name:userName, company};
     console.log(name);
    try{
-        let res = await fetch(`http://localhost:8080/post/`,{
+        let res = await fetch(`https://cointab-yqqo.onrender.com/post/`,{
             method:"POST",
             headers:{
                 "content-type":"application/json"
@@ -183,7 +183,7 @@ async function addPostToDatabase(userId, id, title, body, userName, company) {
 
 async function checkPost(id){
     try{
-        let res = await fetch(`http://localhost:8080/post/${id}`);
+        let res = await fetch(`https://cointab-yqqo.onrender.com/post/${id}`);
         let data = await res.json();
         console.log(data);
 
