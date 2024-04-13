@@ -58,7 +58,7 @@ function displayUser(data) {
 
         let isPresent = await databaseFetch(elem.id);
         openBtn.addEventListener('click', () => {
-            window.location.href = `/CoinTab/frontend/post.html?id=${elem.id}`;
+            window.location.href = `/post.html?id=${elem.id}`;
         });
         console.log("ispresent value", isPresent);
         if (!isPresent) {
