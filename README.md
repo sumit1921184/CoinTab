@@ -14,16 +14,18 @@ Backend: https://cointab-yqqo.onrender.com/
 
 
 ## Directory Structure
-my-app/
+```
+CoinTab/
 ├─ backend/
 ├─ frontend/
 │  ├─ style/
-      ├─ index.css
-    ├─ index.html
-    ├─ post.html
-    ├─ index.js
-    ├─ post.js
-
+│  │   └─ index.css
+│  ├─ index.html
+│  ├─ post.html
+│  ├─ index.js
+│  └─ post.js
+└─ Readme.md
+```
 ## Video Walkthrough of the project
 https://youtu.be/WvsuLlbw_NQ
 
